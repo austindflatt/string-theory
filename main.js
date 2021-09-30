@@ -123,6 +123,12 @@ console.log(reverse('mesuara'));
 
 // Task 10 //
 function onlyVowels(str) {
+    let output = '';
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u" || str[i] == "A")
+        output += str[i];
+    }
+    return output;
 }
 
 console.log(onlyVowels('Colin Jaffe'));
